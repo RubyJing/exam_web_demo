@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../assets/myjs/common.js"></script>
+
+    <meta charset="UTF-8">
+    <title>OEP</title>
+    <style type="text/css">
+        <!-- 头部的样式 -->
+        .navbar{ box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); margin: 0;  padding-left: 0;  padding-right: 0;min-height:5px; border-width: 0;  border-radius: 0;}
+        .mh5{
+            min-height:5px;
+        }
+        .navbar-default{color: dimgrey}
+        .bgcw{background:white;}
+        .navbar-container{padding-bottom: 10px;}
+        .mynavbar-brand{font-size: 24px;text-shadow: none;height: auto;margin-left: 10px;}
+        .index-font{font-size: 18px;}
+        .mylight-blue{ margin-left: 10px; width: 100px;}
+        .head-button{display: flex;flex-flow:row;width: 14%;text-shadow: none;height: auto;}
+        .user-font{font-size: 15px;}
+        a:hover{ color:#428BCA; text-decoration:none; }
+        i.fa-power-off:hover{ color: rgb(231, 26, 20); cursor:pointer;  }
+        .mt10{ margin-top:10px; }
+        .mt5{margin-top: 5px;}
+        .ml5{margin-left: 5px;}
+    </style>
+</head>
+<body class="bgcw">
+    <!-- 头部 -->
+    <div id="navbar" class="navbar navbar-default  navbar-collapse  h-navbar bgcw mh5">
+        <div class="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="login.html" class="mynavbar-brand">
+                    <i class="fa"><img src="../assets/myimg/index.png" width="25" height="25"></i>
+                    <span class="index-font mt5">主頁</span>
+                </a>
+            </div>
+             <div class="head-button navbar-header pull-right" role="navigation">
+               <div class="mt5"><h5>歡迎</h5></div>
+                 <div class="mylight-blue mt10">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <span class="user-font">Jason老師</span>
+                        <i class="ace-icon fa fa-caret-down"></i>
+                    </a>
+                </div>
+               <i class="ace-icon fa fa-power-off mt10  btn-sm ml5" title="退出"></i>
+             </div>
+        </div>
+    </div>
+
+    <!--尾部 -->
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $("#footer").load("footer.html");
+    </script>
+</body>
+</html>
