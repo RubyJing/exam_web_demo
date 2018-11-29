@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <script src="../assets/myjs/common.js"></script>
+
     <meta charset="UTF-8">
     <title>OEP</title>
     <style type="text/css">
         <!-- 头部的样式 -->
-        .navbar{box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); margin: 0;  padding-left: 0;  padding-right: 0;min-height: 5px; border-width: 0;  border-radius: 0; color: black;}
+        .navbar{ box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); margin: 0;  padding-left: 0;  padding-right: 0;min-height:5px; border-width: 0;  border-radius: 0;}
+        .mh5{
+            min-height:5px;
+        }
         .navbar-default{color: dimgrey}
         .bgcw{background:white;}
         .navbar-container{padding-bottom: 10px;}
@@ -22,8 +26,9 @@
         .ml5{margin-left: 5px;}
     </style>
 </head>
-<body>
-    <div id="navbar" class="navbar navbar-default bgcw">
+<body class="bgcw">
+    <!-- 头部 -->
+    <div id="navbar" class="navbar navbar-default  navbar-collapse  h-navbar bgcw mh5">
         <div class="navbar-container">
             <div class="navbar-header pull-left">
                 <a href="login.html" class="mynavbar-brand">
@@ -43,5 +48,11 @@
              </div>
         </div>
     </div>
+
+    <!--尾部 -->
+    <div id="footer"></div>
+    <script type="text/javascript">
+        $("#footer").load("footer.html");
+    </script>
 </body>
 </html>
