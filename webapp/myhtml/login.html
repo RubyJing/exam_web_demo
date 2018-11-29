@@ -58,11 +58,15 @@
 			.loginback {
 				background: #dfe0e2 url('../assets/myimg/background.jpg') repeat;
 			}
+			.mywidget-main{
+				background-color: rgba(0, 0, 0, 0.5);
+				padding: 16px 36px 36px;
+			}
 		</style>
 	</head>
 
 	<body class="login-layout loginback">
-		<div class="main-container">
+		<div class="main-container ">
 			<div class="main-content">
 				<div class="row">
 					<div class="col-sm-10 col-sm-offset-1 mytop">
@@ -79,11 +83,11 @@
 
 							<div class="position-relative">
 								<div id="login-box" class="login-box visible widget-box no-border">
-									<div class="widget-body">
-										<div class="widget-main">
+									<div class="mywidget-body">
+										<div class="mywidget-main">
 											<h4 class="header blue lighter bigger">
 												<i class="ace-icon fa fa-coffee green"></i>
-												Please Enter Your Information
+												會員登入
 											</h4>
 
 											<div class="space-6"></div>
@@ -92,14 +96,14 @@
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" />
+															<input type="text" class="form-control" placeholder="請輸入賬號" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" />
+															<input type="password" class="form-control" placeholder="請輸入密碼" />
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
 													</label>
@@ -109,12 +113,12 @@
 													<div class="clearfix">
 														<label class="inline">
 															<input type="checkbox" class="ace" />
-															<span class="lbl"> Remember Me</span>
+															<span class="lbl"> 記住密碼</span>
 														</label>
 
 														<button type="button" class="width-35 pull-right btn btn-sm btn-primary">
 															<i class="ace-icon fa fa-key"></i>
-															<span class="bigger-110">Login</span>
+															<span class="bigger-110">確認送出</span>
 														</button>
 													</div>
 
@@ -283,6 +287,7 @@
 				</div><!-- /.row -->
 			</div><!-- /.main-content -->
 		</div><!-- /.main-container -->
+		<div id="footer"></div>
 
 		<!-- basic scripts -->
 
@@ -299,6 +304,7 @@
 </script>
 <![endif]-->
 		<script type="text/javascript">
+            $("#footer").load("footer.html");
 			if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
 		</script>
 
