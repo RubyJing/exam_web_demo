@@ -12048,14 +12048,14 @@ td .lbl:only-child {
   text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.25);
 }
 .login-box .forgot-password-link {
-  color: #FE9;
+  color: #ff6568;
 }
 .login-box .user-signup-link {
-  color: #CF7;
+  color: #0080ff;
 }
 .login-box .toolbar {
-  background: #5090C1;
-  border-top: 2px solid #597597;
+  background-color: rgba(255, 250, 250, 0.2);
+  height: 50px;
 }
 .login-box .toolbar > div {
   width: 50%;

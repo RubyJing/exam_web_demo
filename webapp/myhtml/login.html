@@ -8,6 +8,10 @@
 		<meta name="description" content="User login page" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
+		<link rel="stylesheet" href="../css/jquery.slider.css" />
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.slider.min.js"></script>
 		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="../assets/css/bootstrap.css" />
 		<link rel="stylesheet" href="../assets/css/font-awesome.css" />
@@ -59,8 +63,8 @@
 				background: #dfe0e2 url('../assets/myimg/background.jpg') repeat;
 			}
 			.mywidget-main{
-				background-color: rgba(0, 0, 0, 0.5);
-				padding: 16px 36px 36px;
+				background-color: rgba(255, 250, 250, 0.2);
+				padding: 16px 36px 10px;
 			}
 		</style>
 	</head>
@@ -107,7 +111,7 @@
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
 													</label>
-
+													<div id="slider1" class="slider"></div>
 													<div class="space"></div>
 
 													<div class="clearfix">
@@ -123,41 +127,22 @@
 													</div>
 
 													<div class="space-4"></div>
+
 												</fieldset>
 											</form>
-
-											<div class="social-or-login center">
-												<span class="bigger-110">Or Login Using</span>
-											</div>
-
-											<div class="space-6"></div>
-
-											<div class="social-login center">
-												<a class="btn btn-primary">
-													<i class="ace-icon fa fa-facebook"></i>
-												</a>
-
-												<a class="btn btn-info">
-													<i class="ace-icon fa fa-twitter"></i>
-												</a>
-
-												<a class="btn btn-danger">
-													<i class="ace-icon fa fa-google-plus"></i>
-												</a>
-											</div>
 										</div><!-- /.widget-main -->
 
 										<div class="toolbar clearfix">
 											<div>
 												<a href="#" data-target="#forgot-box" class="forgot-password-link">
 													<i class="ace-icon fa fa-arrow-left"></i>
-													I forgot my password
+													忘記密碼
 												</a>
 											</div>
 
 											<div>
 												<a href="#" data-target="#signup-box" class="user-signup-link">
-													I want to register
+													注冊賬號
 													<i class="ace-icon fa fa-arrow-right"></i>
 												</a>
 											</div>
@@ -304,6 +289,14 @@
 </script>
 <![endif]-->
 		<script type="text/javascript">
+            $("#slider1").slider({
+                width: 291,
+                textMsg: "請按住滑塊，拖動到最右邊",
+                successMsg: "验证通过",
+                callback: function(result) {
+                    alert(result);
+                }
+            });
             $("#footer").load("footer.html");
 			if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
 		</script>
