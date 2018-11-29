@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--选择系统页面 -->
+    <meta charset="UTF-8">
+    <title>OEP</title>
+    <script type="text/javascript">
+        $("#footer").load("./footer.html");
+    </script>
+
+    <style type="text/css">
+        .main-content{
+            min-height: 100%;
+            padding: 0;
+        }
+        .main-content-inner{
+            float: left;
+            width: 100%;
+        }
+        .page-content{
+            background-color: #ffffff;
+            position: relative;
+            margin: 0;
+            padding: 8px 20px 24px;
+        }
+        .welcome{
+            font-size: 14px;
+            font-weight: bold;
+            height: 35px;
+            line-height: 35px;
+            padding: 0px 15px;
+        }
+        #footer{
+            height: 20%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <div class="page-content">
+                <h3 id="welcome" class="welcome">
+                    <span>歡迎進入/登出</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!--引入脚注 -->
+    <!--<div id="footer">-->
+        <!--<iframe align="center" width="100%" height="170" src="footer.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+    <!--</div>-->
+    <div id="footer"></div>
+
+</body>
+</html>
