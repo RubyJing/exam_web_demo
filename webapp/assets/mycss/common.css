@@ -1,0 +1,18 @@
+<!-- 头部的样式 -->
+.navbar{ box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); margin: 0;  padding-left: 0;  padding-right: 0;min-height:5px; border-width: 0;  border-radius: 0;}
+.mh5{
+    min-height:5px;
+}
+.navbar-default{color: dimgrey}
+.bgcw{background:white;}
+.navbar-container{padding-bottom: 10px;}
+.mynavbar-brand{font-size: 24px;text-shadow: none;height: auto;margin-left: 10px;}
+.index-font{font-size: 18px;}
+.mylight-blue{ margin-left: 10px; width: 100px;}
+.head-button{display: flex;flex-flow:row;width: 14%;text-shadow: none;height: auto;}
+.user-font{font-size: 15px;}
+a:hover{ color:#428BCA; text-decoration:none; }
+i.fa-power-off:hover{ color: rgb(231, 26, 20); cursor:pointer;  }
+.mt10{ margin-top:10px; }
+.mt5{margin-top: 5px;}
+.ml5{margin-left: 5px;}
