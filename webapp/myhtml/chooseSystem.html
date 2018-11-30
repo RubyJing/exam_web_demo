@@ -7,16 +7,31 @@
     <script src="../assets/myjs/common.js"></script>
 
     <style type="text/css">
-        .main-content{min-height: 100%;padding: 0;}
-        .main-content-inner{float: left;width: 100%;}
-        .page-content{background-color: #ffffff;position: relative;margin: 0;padding: 8px 20px 24px;}
-        .welcome{font-size: 14px;font-weight: bold;height: 35px;line-height: 35px;padding: 0px 15px;}
-        /*.loginback {background: #dfe0e2 url('../assets/myimg/background.jpg') repeat;}*/
         .examlogo{text-align: center;margin-top: 0%}
     </style>
 </head>
 <body class="loginback">
-<!--<div id="headerx"></div>-->
+    <!-- 头部 -->
+    <div id="navbar" class="navbar navbar-default  navbar-collapse  h-navbar bgcw mh5">
+        <div class="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="login.html" class="mynavbar-brand">
+                    <i class="fa"><img src="../assets/myimg/index.png" width="25" height="25"></i>
+                    <span class="index-font mt5">主頁</span>
+                </a>
+            </div>
+            <div class="head-button navbar-header pull-right" role="navigation">
+                <div class="mt5"><h5>歡迎</h5></div>
+                <div class="mylight-blue mt10">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <span class="user-font">Jason老師</span>
+                        <i class="ace-icon fa fa-caret-down"></i>
+                    </a>
+                </div>
+                <i class="ace-icon fa fa-power-off mt10  btn-sm ml5" title="退出"></i>
+            </div>
+        </div>
+    </div>
 
 
     <div style="text-align: center;margin-bottom: 5%">
@@ -32,7 +47,6 @@
     <div id="footer"></div>
     <script type="text/javascript">
         $("#footer").load("./footer.html");
-        $("#headerx").load("./function.html");
     </script>
 </body>
 </html>
