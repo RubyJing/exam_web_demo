@@ -13,6 +13,8 @@
         }
         .navbar-default{color: dimgrey}
         .bgcw{background:white;}
+        .bghc{background-color: #fcd4ce
+        }
         .navbar-container{padding-bottom: 10px;}
         .mynavbar-brand{font-size: 24px;text-shadow: none;height: auto;margin-left: 10px;}
         .index-font{font-size: 18px;}
@@ -24,11 +26,30 @@
         .mt10{ margin-top:10px; }
         .mt5{margin-top: 5px;}
         .ml5{margin-left: 5px;}
+        <!-- 中间的样式 -->
+
+        ul li{
+            list-style-type:none;
+        }
+        .n-ex-one-li li{float: left;width: 25%;list-style-type:none;}
+        .n-ex-one-li li .n-ex-o-li-warp{display: block;width: 190px;margin: 20px auto;padding: 30px;transition: all 0.5s;-webkit-transition: all 0.5s;-ms-transition: all 0.5s;-moz-transition: all 0.5s;-o-transition: all 0.5s;}
+        .n-ex-o-li-warp .top-pic{position: relative;padding: 1px;}
+        .n-ex-o-li-warp .top-pic .af-img{display: block;width: 80%;height: 80%;position: absolute;z-index: 9;top:10%;left: 10%;}
+        .n-ex-o-li-warp .top-pic .af-img img{display: block;width: 100%;height: 100%;}
+        .n-ex-o-li-warp .top-pic .bg-img{filter:alpha(opacity=0);opacity: 0;transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out;  -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;  }
+        .n-ex-o-li-warp .top-pic .bg-img img{display: block;width: 100%;height: 100%;}
+        .n-ex-o-li-warp.cur .top-pic .bg-img,.n-ex-one-li li .n-ex-o-li-warp:hover .top-pic .bg-img{filter:alpha(opacity=100);opacity: 1;-webkit-transform:rotate(9deg);-moz-transform:rotate(9deg);-o-transform:rotate(9deg);-ms-transform:rotate(9deg);transform:rotate(9deg);}
+        .n-ex-o-li-warp.cur p,.n-ex-one-li li .n-ex-o-li-warp:hover,.n-ex-one-li li .n-ex-o-li-warp:hover p{text-decoration: none;}
+        .n-ex-o-li-warp.cur,.n-ex-one-li li .n-ex-o-li-warp:hover{box-shadow: 0px 0px 30px rgba(0,0,0,0.1)}
+        .tac {text-align: center; }
+        .f-fM {font-family: 'Microsoft YaHei';}
+        .c-b{color: black;}
+        .fsize18{font-size: 16px}
     </style>
 </head>
 <body class="bgcw">
     <!-- 头部 -->
-    <div id="navbar" class="navbar navbar-default  navbar-collapse  h-navbar bgcw mh5">
+    <div id="navbar" class="navbar navbar-default  navbar-collapse  h-navbar bghc mh5">
         <div class="navbar-container">
             <div class="navbar-header pull-left">
                 <a href="login.html" class="mynavbar-brand">
@@ -46,6 +67,28 @@
                 </div>
                <i class="ace-icon fa fa-power-off mt10  btn-sm ml5" title="退出"></i>
              </div>
+        </div>
+    </div>
+    <!--中间面板 -->
+    <div class="page-content">
+        <div class="col-xs-12"></div>
+        <div class="col-xs-12"></div>
+        <div class="col-xs-12">
+            <ul class="n-ex-one-li clearfix">
+                <li>
+                    <a onclick="submitForm(2,'examPaper')" href="javascript:void (0)" title="试 卷" class="n-ex-o-li-warp">
+                        <div class="top-pic">
+                            <span class="af-img">
+                                <img src="../assets/myimg/new-ks-two-1.png">
+                            </span>
+                            <div class="bg-img">
+                                <img src="../assets/myimg/new-ks-two-1-bg.png">
+                            </div>
+                        </div>
+                        <p class="tac f-fM c-333 fsize18 disFw mt5 hLh20 c-b">试 卷</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 
